@@ -1,0 +1,94 @@
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    width: 500px;
+    height: 500px;
+    background: url(img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background: #000;
+}
+
+/* HOURS */
+.h{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.h::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 21%);
+    width: 15px;
+    height: 150px;
+    background: url(img/hours.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* MINUTES */
+.m{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(35deg);
+    position: absolute;
+}
+.m::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 16%);
+    width: 15px;
+    height: 183px;
+    background: url(img/minutes.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* SECOND */
+.s{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    transform: rotate(0deg);
+    position: absolute;
+}
+.s::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 36%);
+    width: 15px;
+    height: 280px;
+    background: url(img/second.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
